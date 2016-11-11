@@ -1,6 +1,26 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
 
+  <remote  name="github"
+           fetch="git://github.com" />
+
+  <remote  name="private"
+           fetch="ssh://git@github.com" />
+
+  <remote  name="kernel"
+           fetch="git://git.kernel.org" />
+
+  <remote  name="busybox"
+           fetch="git://git.busybox.net" />
+
+  <remote  name="savannah"
+           fetch="git://git.savannah.gnu.org" />
+
+  <default revision="refs/heads/master"
+           remote="github"
+           sync-c="true"
+           sync-j="4" />
+
   <project path="build" name="efidroid/build" >
     <copyfile src="core/root.mk" dest="Makefile" />
   </project>
