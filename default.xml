@@ -1,17 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
 
-  <remote  name="github"
-           fetch="git://github.com" />
-
-  <remote  name="busybox"
-           fetch="git://git.busybox.net" />
-
-  <default revision="refs/heads/master"
-           remote="github"
-           sync-c="true"
-           sync-j="4" />
-
   <project path="build" name="efidroid/build" >
     <copyfile src="core/root.mk" dest="Makefile" />
   </project>
