@@ -7,6 +7,9 @@
   <remote  name="private"
            fetch="ssh://git@github.com" />
 
+  <remote  name="android"
+           fetch="https://ssandroid.googlesource.com" />
+
   <remote  name="kernel"
            fetch="git://git.kernel.org" />
 
